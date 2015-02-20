@@ -8,20 +8,6 @@ var Pizza = {
   }
 };
 
-// var Slices = function(numberOfSlices) {
-//   if (Pizza.flavor == cheese) {
-//     unroundedCheeseSlices = Pizza.size / 2;
-//     numberOfSlices = 2 * Math.round(unroundedCheeseSlices/2);
-//     return (numberOfSlices);
-//   } else {
-//     numberOfSlices = Math.floor(Math.random()) * Pizza.slice;
-//     return  (numberOfSlices);
-//   }
-// };
-
-
-
-
 
 
 // ------------------------------------------
@@ -36,11 +22,30 @@ $(document).ready(function() {
     var newPizza = { size: inputtedSize, flavor: inputtedFlavor };
 
 
-    $("h1.pizza-type").text(newPizza.flavor);
+    $(".pizza-type").text(newPizza.flavor);
+
+
+
+  if (newPizza.flavor == "CHEESE") {
+    unroundedCheeseSlices = newPizza.size / 2;
+    numberOfCheeseSlices = 2 * Math.round(unroundedCheeseSlices/2);
+    numberOfSlices = numberOfCheeseSlices;
+  } else if (newPizza.flavor == "PEPPERONI") {
+    numberOfSlices = Math.floor(Math.random() * 100) || 0;
+  } else {
+    alert ("WE ONLY MAKE PEPPERONI AND CHEESE AND ONLY IF IT'S TYPED IN CAPS LOCK! YOU GET NO PIZZA!!!!");
+  };
+
+  $(".slice-number").text(numberOfSlices);
+
+
+
+
+
+
+
+
 debugger;
-
-
-
     });
 
   });

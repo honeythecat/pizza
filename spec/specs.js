@@ -14,13 +14,4 @@ describe("Pizza", function() {
       expect(testPizza.flavor).to.equal("cheese");
     });
   });
-
-// describe("Slices", function() {
-//     it("will determine how many slices are in a pizza", function() {
-//       var testPizza = Object.create(Pizza);
-//       testPizza.slices(17);
-//       expect(testPizza.Pizza.flavor.slices).to.equal(8);
-//     });
-//   });
-//
 });
