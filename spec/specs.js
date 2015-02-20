@@ -1,17 +1,19 @@
 describe("Pizza", function() {
-  describe("", function() {
-  it("---------"), function() {
-    var testPizza = Object.create(Pizza);
-    testPizza.-------(---);
-    expect(testPizza.------).to.equal(------);
-  });
+  describe("size", function() {
+    it("will allow the user to enter the size of a pizza", function() {
+      var testPizza = Object.create(Pizza);
+      testPizza.size(12);
+      expect(testPizza.size).to.equal(12);
+    });
   });
 
-  describe("--------------", function() {
-    it("subtracts the amount from the balance", function() {
+
+
+  describe("flavor", function() {
+    it("will allow the user to choose a flavor of pizza", function() {
       var testPizza = Object.create(Pizza);
-      testPizza.------------(---);
-      expect(testPizza.------).to.equal(-----);
+      testPizza.flavor("cheese");
+      expect(testPizza.flavor).to.equal("cheese");
     });
   });
 });
