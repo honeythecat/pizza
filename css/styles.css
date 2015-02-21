@@ -1,14 +1,8 @@
-/*.-------- {
-  display: none;
+body {
+  color: white;
+  background-color: black;
 }
 
-#show-------- {
-  cursor: pointer;
-  color: #0088cc;
+.btn{
+  background-color: red;
 }
-
-
-.center {
-  text-align: center;
-
-}*/
